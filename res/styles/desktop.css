@@ -1,0 +1,16 @@
+@media only screen and (min-width: 50rem) {
+	/* body{
+		background: linear-gradient(red 0vh, #d6cdee 100vh);
+	} */
+
+	#content{
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	#content>section{
+		width: 20rem;
+		margin: 1rem;
+	}
+}
