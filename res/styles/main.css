@@ -24,6 +24,8 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	border-bottom:0.25rem solid #d6cdee;
 }
 #title>h1{
 	color: #3c344f;
@@ -43,7 +45,7 @@ main{
 	margin: 1rem;
 }
 
-#content>section>a{
+section#social-media>a{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -52,19 +54,56 @@ main{
 	margin: 0.25rem;
 	width: 100%;
 	height: 3rem;
+	font-size: 1rem;
 	background-color: #3c344f;
 	color: White;
 	border-radius: 1.5rem;
 	transition: background-color 0.25s;
 }
-#content>section>a:hover{
+section#social-media>a:hover{
 	background-color: #8353e5;
 }
-#content>section>a>b{
+section#commission-info>a:not(#terms){
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	margin: 0.25rem;
+	width: 100%;
+	height: 3rem;
+	font-size: 1rem;
+	background-color: #d6cdee;
+	color: Black;
+	border-radius: 1.5rem;
+	transition: background-color 0.25s;
+}
+a#terms{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	margin: 0.25rem;
+	width: 100%;
+	height: 2rem;
+	font-size: 0.75rem;
+	background-color: #605e64;
+	color: White;
+	border-radius: 1rem;
+	transition: background-color 0.25s;
+}
+section#commission-info>a:not(#terms):hover, section#commission-info>a:hover{
+	background-color: #8353e5;
+}
+
+a>b{
 	margin-right: 0.5rem;
 }
 
-#commission-info, #social-media{
+
+
+section.main{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
