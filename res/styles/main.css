@@ -100,7 +100,7 @@ main{
 	margin: 1rem;
 }
 
-section#social-media>a{
+section#social-media>a, section#donation-links>a{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -115,7 +115,7 @@ section#social-media>a{
 	border-radius: 1.5rem;
 	transition: background-color 0.25s;
 }
-section#social-media>a:hover{
+section#social-media>a:hover, section#donation-links>a:hover{
 	background-color: #8353e5;
 }
 section#commission-info>a:not(#terms){
@@ -156,13 +156,18 @@ a>b{
 	margin-right: 0.5rem;
 }
 
-
-
 section.main{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+.centered{
+	display: flexbox;
+	flex-direction: column;
+	align-items: center !important ;
+	justify-content: center !important ;
 }
 
 @font-face {
